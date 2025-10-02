@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ActorsCard from "./ActorsCard.jsx"
 
 //creazione del componente
 export default function ActorsList(){
@@ -28,7 +29,14 @@ useEffect(() => {
     return(
         <div className="container">
             <div className="row">
-                <div className="card"></div>
+               {/*ciclo l'array Actors e creo una card per ogni attore*/}
+               {Actors.map(Actor =>
+               <ActorsCard 
+               key = {Actor.id}
+               //passo tutto il singolo oggetto della variabile Actor al prop
+               actor = {Actor} 
+               />
+                )}
             </div>
         </div>
     );
