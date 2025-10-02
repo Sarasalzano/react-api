@@ -5,7 +5,7 @@ import ActorsCard from "./ActorsCard.jsx"
 //creazione del componente
 export default function ActorsList(){
 //creazione stato degli attori con array vuoto poiché lista verrò aggiornata tramite api
-const [Actors, setActors] = useState([]);
+const [actors, setActors] = useState([]);
 
 //funzione per richiamare dati
 function fetchActors() {
@@ -31,11 +31,11 @@ useEffect(() => {
         <div className="container">
             <div className="row">
                {/*ciclo l'array Actors e creo una card per ogni attore*/}
-               {Actors.map(Actor =>
+               {actors.map(actor =>
                <ActorsCard 
-               key = {Actor.id}
+               key = {actor.id}
                //passo tutto il singolo oggetto della variabile Actor al prop
-               actor = {Actor} 
+               actor = {actor} 
                />
                 )}
             </div>
