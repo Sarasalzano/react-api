@@ -8,11 +8,11 @@ export default function ActorsCard(props){
             <div className="img-wrapper">
                 <img src={actor.image} alt={actor.name} />                
             </div>
-            <span>{actor.name}</span>
-            <span>{actor.birth_year}</span>
-            <span>{actor.nationality}</span>
-            <span>{actor.awards}</span>
-            <span>{actor.biography}</span>
+            <h4 className="bold">{actor.name}</h4>
+            <h4 className="bold">{actor.birth_year}</h4>
+            <h4 className="bold">{actor.nationality}</h4>
+            <h4 className="bold">{actor.awards}</h4>
+            <p>{actor.biography}</p>
         </div>
     );
 }
