@@ -1,0 +1,15 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* GESTIONE CARD PERSONAGGI */
+
+.row {
+    min-height: 100px;
+    background-color: teal;
+    width: 80%;
+    margin: 0 auto;
+}
