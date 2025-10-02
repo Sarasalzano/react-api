@@ -11,7 +11,8 @@ export default function ActorsCard(props){
             <h4 className="bold">{actor.name}</h4>
             <h4 className="bold">{actor.birth_year}</h4>
             <h4 className="bold">{actor.nationality}</h4>
-            <h4 className="bold">{actor.awards}</h4>
+            {/* aggiunta spazio */}
+            <h4 className="bold">{actor.awards.join(" ")}</h4>
             <p>{actor.biography}</p>
         </div>
     );
